@@ -1,0 +1,25 @@
+Ticker,Source,Trading Sessions,Valid Raw Sessions,Sessions Beyond Filtered Coverage,Overlapping Price Differences
+AEE,data/historical,42,42,0,0
+AEP,data/historical,42,42,0,0
+BAC,data/historical,42,42,0,0
+C,data/historical,42,42,0,0
+CCL,data/historical,42,42,0,0
+CFG,data/historical,42,42,0,0
+CMS,data/historical,42,42,0,0
+DUK,data/historical,42,42,0,0
+DVN,data/historical,42,42,0,0
+ED,data/historical,42,42,0,0
+EIX,data/historical,42,42,0,0
+JPM,data/historical,42,42,0,0
+MAC,data/historical,42,42,0,0
+MLM,data/historical,42,42,0,0
+MUR,data/historical,42,42,0,0
+NWS,data/historical,42,42,0,0
+NWSA,data/historical,42,42,0,0
+PNW,data/historical,42,42,0,0
+RCL,data/historical,42,42,0,0
+SPG,data/historical,42,42,0,0
+USB,data/historical,42,42,0,0
+VMC,data/historical,42,42,0,0
+XEL,data/historical,42,42,0,0
+ZION,data/historical,42,42,0,0

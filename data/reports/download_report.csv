@@ -1,0 +1,738 @@
+original_ticker,yahoo_ticker,status,rows,message
+A,A,saved,2927,Passed all checks
+AAL,AAL,saved,2927,Passed all checks
+AAP,AAP,saved,2927,Passed all checks
+AAPL,AAPL,saved,2927,Passed all checks
+ABBV,ABBV,saved,2927,Passed all checks
+ABC,ABC,unavailable,0,Yahoo returned no price rows
+ABMD,ABMD,unavailable,0,Yahoo returned no price rows
+ABNB,ABNB,saved,1431,Passed all checks
+ABT,ABT,saved,2927,Passed all checks
+ACGL,ACGL,saved,2927,Passed all checks
+ACN,ACN,saved,2927,Passed all checks
+ADBE,ADBE,saved,2927,Passed all checks
+ADI,ADI,saved,2927,Passed all checks
+ADM,ADM,saved,2927,Passed all checks
+ADP,ADP,saved,2927,Passed all checks
+ADS,ADS,unavailable,0,Yahoo returned no price rows
+ADSK,ADSK,saved,2927,Passed all checks
+AEE,AEE,saved,2927,Passed all checks
+AEP,AEP,saved,2927,Passed all checks
+AES,AES,saved,2927,Passed all checks
+AET,AET,saved,986,Passed all checks
+AFL,AFL,saved,2927,Passed all checks
+AIG,AIG,saved,2927,Passed all checks
+AIV,AIV,saved,2927,Passed all checks
+AIZ,AIZ,saved,2927,Passed all checks
+AJG,AJG,saved,2927,Passed all checks
+AKAM,AKAM,saved,2927,Passed all checks
+ALB,ALB,saved,2927,Passed all checks
+ALGN,ALGN,saved,2927,Passed all checks
+ALK,ALK,saved,2927,Passed all checks
+ALL,ALL,saved,2927,Passed all checks
+ALLE,ALLE,saved,2927,Passed all checks
+ALXN,ALXN,unavailable,0,Yahoo returned no price rows
+AMAT,AMAT,saved,2927,Passed all checks
+AMCR,AMCR,saved,2927,Passed all checks
+AMD,AMD,saved,2927,Passed all checks
+AME,AME,saved,2927,Passed all checks
+AMG,AMG,saved,2927,Passed all checks
+AMGN,AMGN,saved,2927,Passed all checks
+AMP,AMP,saved,2927,Passed all checks
+AMT,AMT,saved,2927,Passed all checks
+AMTM,AMTM,saved,480,Passed all checks
+AMZN,AMZN,saved,2927,Passed all checks
+AN,AN,saved,2927,Passed all checks
+ANDV,ANDV,saved,943,Passed all checks
+ANET,ANET,saved,2927,Passed all checks
+ANSS,ANSS,unavailable,0,Yahoo returned no price rows
+ANTM,ANTM,unavailable,0,Yahoo returned no price rows
+AON,AON,saved,2927,Passed all checks
+AOS,AOS,saved,2927,Passed all checks
+APA,APA,saved,2927,Passed all checks
+APC,APC,saved,133,Passed all checks
+APD,APD,saved,2927,Passed all checks
+APH,APH,saved,2927,Passed all checks
+APO,APO,saved,2927,Passed all checks
+APP,APP,saved,1346,Passed all checks
+APTV,APTV,saved,2927,Passed all checks
+ARE,ARE,saved,2927,Passed all checks
+ARES,ARES,saved,2927,Passed all checks
+ARG,ARG,unavailable,0,Yahoo returned no price rows
+ATI,ATI,saved,2927,Passed all checks
+ATO,ATO,saved,2927,Passed all checks
+ATVI,ATVI,unavailable,0,Yahoo returned no price rows
+AVB,AVB,saved,27,Passed all checks
+AVGO,AVGO,saved,2927,Passed all checks
+AVP,AVP,unavailable,0,Yahoo returned no price rows
+AVY,AVY,saved,2927,Passed all checks
+AWK,AWK,saved,2927,Passed all checks
+AXON,AXON,saved,2927,Passed all checks
+AXP,AXP,saved,2927,Passed all checks
+AYI,AYI,saved,2927,Passed all checks
+AZO,AZO,saved,2927,Passed all checks
+BA,BA,saved,2927,Passed all checks
+BAC,BAC,saved,2927,Passed all checks
+BALL,BALL,saved,2927,Passed all checks
+BAX,BAX,saved,2927,Passed all checks
+BBBY,BBBY,saved,27,Passed all checks
+BBT,BBT,saved,2927,Passed all checks
+BBWI,BBWI,saved,2927,Passed all checks
+BBY,BBY,saved,2927,Passed all checks
+BCR,BCR,unavailable,0,Yahoo returned no price rows
+BDX,BDX,saved,2927,Passed all checks
+BEN,BEN,saved,2927,Passed all checks
+BF-B,BF-B,saved,2927,Passed all checks
+BG,BG,saved,2927,Passed all checks
+BHF,BHF,saved,2289,Passed all checks
+BIIB,BIIB,saved,2927,Passed all checks
+BIO,BIO,saved,2927,Passed all checks
+BK,BK,unavailable,0,Yahoo returned no price rows
+BKNG,BKNG,saved,2927,Passed all checks
+BKR,BKR,saved,2927,Passed all checks
+BLDR,BLDR,saved,2927,Passed all checks
+BLK,BLK,saved,2927,Passed all checks
+BLL,BLL,unavailable,0,Yahoo returned no price rows
+BMY,BMY,saved,2927,Passed all checks
+BNY,BNY,saved,2927,Passed all checks
+BR,BR,saved,2927,Passed all checks
+BRCM,BRCM,unavailable,0,Yahoo returned no price rows
+BRK-B,BRK-B,saved,2927,Passed all checks
+BRO,BRO,saved,2927,Passed all checks
+BSX,BSX,saved,2927,Passed all checks
+BWA,BWA,saved,2927,Passed all checks
+BX,BX,saved,2927,Passed all checks
+BXLT,BXLT,unavailable,0,Yahoo returned no price rows
+BXP,BXP,saved,2927,Passed all checks
+C,C,saved,2927,Passed all checks
+CA,CA,unavailable,0,Yahoo returned no price rows
+CAG,CAG,saved,2927,Passed all checks
+CAH,CAH,saved,2927,Passed all checks
+CAM,CAM,saved,222,Passed all checks
+CARR,CARR,saved,1616,Passed all checks
+CASY,CASY,saved,2927,Passed all checks
+CAT,CAT,saved,2927,Passed all checks
+CB,CB,saved,2927,Passed all checks
+CBOE,CBOE,saved,2927,Passed all checks
+CBRE,CBRE,saved,2927,Passed all checks
+CBS,CBS,unavailable,0,Yahoo returned no price rows
+CCI,CCI,saved,2927,Passed all checks
+CCL,CCL,saved,2927,Passed all checks
+CDAY,CDAY,unavailable,0,Yahoo returned no price rows
+CDNS,CDNS,saved,2927,Passed all checks
+CDW,CDW,saved,2927,Passed all checks
+CE,CE,saved,2927,Passed all checks
+CEG,CEG,saved,1153,Passed all checks
+CELG,CELG,unavailable,0,Yahoo returned no price rows
+CERN,CERN,unavailable,0,Yahoo returned no price rows
+CF,CF,saved,2927,Passed all checks
+CFG,CFG,saved,2927,Passed all checks
+CFN,CFN,unavailable,0,Yahoo returned no price rows
+CHD,CHD,saved,2927,Passed all checks
+CHRW,CHRW,saved,2927,Passed all checks
+CHTR,CHTR,saved,2927,Passed all checks
+CI,CI,saved,2927,Passed all checks
+CIEN,CIEN,saved,2927,Passed all checks
+CINF,CINF,saved,2927,Passed all checks
+CL,CL,saved,2927,Passed all checks
+CLX,CLX,saved,2927,Passed all checks
+CMA,CMA,unavailable,0,Yahoo returned no price rows
+CMCSA,CMCSA,saved,2927,Passed all checks
+CMCSK,CMCSK,unavailable,0,Yahoo returned no price rows
+CME,CME,saved,2927,Passed all checks
+CMG,CMG,saved,2927,Passed all checks
+CMI,CMI,saved,2927,Passed all checks
+CMS,CMS,saved,2927,Passed all checks
+CNC,CNC,saved,2927,Passed all checks
+CNP,CNP,saved,2927,Passed all checks
+CNX,CNX,saved,2927,Passed all checks
+COF,COF,saved,2927,Passed all checks
+COG,COG,unavailable,0,Yahoo returned no price rows
+COHR,COHR,saved,2927,Passed all checks
+COIN,COIN,saved,1347,Passed all checks
+COL,COL,saved,1461,Passed all checks
+COO,COO,saved,2927,Passed all checks
+COP,COP,saved,2927,Passed all checks
+COR,COR,saved,2927,Passed all checks
+COST,COST,saved,2927,Passed all checks
+COTY,COTY,saved,2927,Passed all checks
+COV,COV,unavailable,0,Yahoo returned no price rows
+CPAY,CPAY,saved,2927,Passed all checks
+CPB,CPB,saved,2927,Passed all checks
+CPGX,CPGX,unavailable,0,Yahoo returned no price rows
+CPRI,CPRI,saved,2927,Passed all checks
+CPRT,CPRT,saved,2927,Passed all checks
+CPT,CPT,saved,2927,Passed all checks
+CRH,CRH,saved,2927,Passed all checks
+CRL,CRL,saved,2927,Passed all checks
+CRM,CRM,saved,2927,Passed all checks
+CRWD,CRWD,saved,1810,Passed all checks
+CSCO,CSCO,saved,2927,Passed all checks
+CSGP,CSGP,saved,2927,Passed all checks
+CSRA,CSRA,saved,9,Passed all checks
+CSX,CSX,saved,2927,Passed all checks
+CTAS,CTAS,saved,2927,Passed all checks
+CTL,CTL,unavailable,0,Yahoo returned no price rows
+CTLT,CTLT,unavailable,0,Yahoo returned no price rows
+CTRA,CTRA,unavailable,0,Yahoo returned no price rows
+CTSH,CTSH,saved,2927,Passed all checks
+CTVA,CTVA,saved,1822,Passed all checks
+CTXS,CTXS,unavailable,0,Yahoo returned no price rows
+CVC,CVC,unavailable,0,Yahoo returned no price rows
+CVNA,CVNA,saved,2343,Passed all checks
+CVS,CVS,saved,2927,Passed all checks
+CVX,CVX,saved,2927,Passed all checks
+CXO,CXO,unavailable,0,Yahoo returned no price rows
+CZR,CZR,saved,2927,Passed all checks
+D,D,saved,2927,Passed all checks
+DAL,DAL,saved,2927,Passed all checks
+DASH,DASH,saved,1432,Passed all checks
+DAY,DAY,unavailable,0,Yahoo returned no price rows
+DD,DD,saved,2927,Passed all checks
+DDOG,DDOG,saved,1741,Passed all checks
+DE,DE,saved,2927,Passed all checks
+DECK,DECK,saved,2927,Passed all checks
+DELL,DELL,saved,2518,Passed all checks
+DFS,DFS,unavailable,0,Yahoo returned no price rows
+DG,DG,saved,2927,Passed all checks
+DGX,DGX,saved,2927,Passed all checks
+DHI,DHI,saved,2927,Passed all checks
+DHR,DHR,saved,2927,Passed all checks
+DIS,DIS,saved,2927,Passed all checks
+DISCA,DISCA,unavailable,0,Yahoo returned no price rows
+DISCK,DISCK,unavailable,0,Yahoo returned no price rows
+DISH,DISH,unavailable,0,Yahoo returned no price rows
+DLR,DLR,saved,2927,Passed all checks
+DLTR,DLTR,saved,2927,Passed all checks
+DNR,DNR,unavailable,0,Yahoo returned no price rows
+DOC,DOC,saved,2927,Passed all checks
+DOV,DOV,saved,2927,Passed all checks
+DOW,DOW,saved,1868,Passed all checks
+DPZ,DPZ,saved,2927,Passed all checks
+DRE,DRE,unavailable,0,Yahoo returned no price rows
+DRI,DRI,saved,2927,Passed all checks
+DTE,DTE,saved,2927,Passed all checks
+DUK,DUK,saved,2927,Passed all checks
+DVA,DVA,saved,2927,Passed all checks
+DVN,DVN,saved,2927,Passed all checks
+DWDP,DWDP,unavailable,0,Yahoo returned no price rows
+DXC,DXC,saved,2927,Passed all checks
+DXCM,DXCM,saved,2927,Passed all checks
+EA,EA,saved,6,Passed all checks
+EBAY,EBAY,saved,2927,Passed all checks
+ECHO,ECHO,saved,2927,Passed all checks
+ECL,ECL,saved,2927,Passed all checks
+ED,ED,saved,2927,Passed all checks
+EFX,EFX,saved,2927,Passed all checks
+EG,EG,saved,2927,Passed all checks
+EIX,EIX,saved,2927,Passed all checks
+EL,EL,saved,2927,Passed all checks
+ELV,ELV,saved,2927,Passed all checks
+EME,EME,saved,2927,Passed all checks
+EMN,EMN,saved,2927,Passed all checks
+EMR,EMR,saved,2927,Passed all checks
+ENDP,ENDP,unavailable,0,Yahoo returned no price rows
+ENPH,ENPH,saved,2927,Passed all checks
+EOG,EOG,saved,2927,Passed all checks
+EPAM,EPAM,saved,2927,Passed all checks
+EQIX,EQIX,saved,2927,Passed all checks
+EQR,EQR,saved,14,Passed all checks
+EQT,EQT,saved,2927,Passed all checks
+ERIE,ERIE,saved,2927,Passed all checks
+ES,ES,saved,2927,Passed all checks
+ESRX,ESRX,saved,1000,Passed all checks
+ESS,ESS,saved,2927,Passed all checks
+ESV,ESV,unavailable,0,Yahoo returned no price rows
+ETFC,ETFC,unavailable,0,Yahoo returned no price rows
+ETN,ETN,saved,2927,Passed all checks
+ETR,ETR,saved,2927,Passed all checks
+ETSY,ETSY,saved,2856,Passed all checks
+EVHC,EVHC,saved,950,Passed all checks
+EVRG,EVRG,saved,2927,Passed all checks
+EW,EW,saved,2927,Passed all checks
+EXC,EXC,saved,2927,Passed all checks
+EXE,EXE,saved,1390,Passed all checks
+EXPD,EXPD,saved,2927,Passed all checks
+EXPE,EXPE,saved,2927,Passed all checks
+EXR,EXR,saved,2927,Passed all checks
+F,F,saved,2927,Passed all checks
+FANG,FANG,saved,2927,Passed all checks
+FAST,FAST,saved,2927,Passed all checks
+FB,FB,saved,292,Passed all checks
+FBHS,FBHS,unavailable,0,Yahoo returned no price rows
+FCPT,FCPT,saved,2711,Passed all checks
+FCX,FCX,saved,2927,Passed all checks
+FDO,FDO,unavailable,0,Yahoo returned no price rows
+FDS,FDS,saved,2927,Passed all checks
+FDX,FDX,saved,2927,Passed all checks
+FDXF,FDXF,saved,62,Passed all checks
+FE,FE,saved,2927,Passed all checks
+FERG,FERG,saved,2927,Passed all checks
+FFIV,FFIV,saved,2927,Passed all checks
+FI,FI,unavailable,0,Yahoo returned no price rows
+FICO,FICO,saved,2927,Passed all checks
+FIS,FIS,saved,2927,Passed all checks
+FISV,FISV,saved,2926,Passed all checks
+FITB,FITB,saved,2927,Passed all checks
+FIX,FIX,saved,2927,Passed all checks
+FL,FL,unavailable,0,Yahoo returned no price rows
+FLEX,FLEX,saved,2927,Passed all checks
+FLIR,FLIR,unavailable,0,Yahoo returned no price rows
+FLR,FLR,saved,2927,Passed all checks
+FLS,FLS,saved,2927,Passed all checks
+FLT,FLT,unavailable,0,Yahoo returned no price rows
+FMC,FMC,saved,2927,Passed all checks
+FOX,FOX,saved,1873,Passed all checks
+FOXA,FOXA,saved,1874,Passed all checks
+FRC,FRC,unavailable,0,Yahoo returned no price rows
+FRT,FRT,saved,2927,Passed all checks
+FSLR,FSLR,saved,2927,Passed all checks
+FTI,FTI,saved,2927,Passed all checks
+FTNT,FTNT,saved,2927,Passed all checks
+FTR,FTR,unavailable,0,Yahoo returned no price rows
+FTV,FTV,saved,2549,Passed all checks
+GD,GD,saved,2927,Passed all checks
+GDDY,GDDY,saved,2867,Passed all checks
+GE,GE,saved,2927,Passed all checks
+GEHC,GEHC,saved,924,Passed all checks
+GEN,GEN,saved,2927,Passed all checks
+GEV,GEV,saved,604,Passed all checks
+GGP,GGP,unavailable,0,Yahoo returned no price rows
+GILD,GILD,saved,2927,Passed all checks
+GIS,GIS,saved,2927,Passed all checks
+GL,GL,saved,2927,Passed all checks
+GLW,GLW,saved,2927,Passed all checks
+GM,GM,saved,2927,Passed all checks
+GMCR,GMCR,unavailable,0,Yahoo returned no price rows
+GME,GME,saved,2927,Passed all checks
+GNRC,GNRC,saved,2927,Passed all checks
+GNW,GNW,saved,2927,Passed all checks
+GOOG,GOOG,saved,2927,Passed all checks
+GOOGL,GOOGL,saved,2927,Passed all checks
+GPC,GPC,saved,2927,Passed all checks
+GPN,GPN,saved,2927,Passed all checks
+GPS,GPS,unavailable,0,Yahoo returned no price rows
+GRMN,GRMN,saved,2927,Passed all checks
+GS,GS,saved,2927,Passed all checks
+GT,GT,saved,2927,Passed all checks
+GWW,GWW,saved,2927,Passed all checks
+HAL,HAL,saved,2927,Passed all checks
+HAS,HAS,saved,2927,Passed all checks
+HBAN,HBAN,saved,2927,Passed all checks
+HBI,HBI,unavailable,0,Yahoo returned no price rows
+HCA,HCA,saved,2927,Passed all checks
+HCBK,HCBK,unavailable,0,Yahoo returned no price rows
+HD,HD,saved,2927,Passed all checks
+HES,HES,unavailable,0,Yahoo returned no price rows
+HFC,HFC,unavailable,0,Yahoo returned no price rows
+HIG,HIG,saved,2927,Passed all checks
+HII,HII,saved,2927,Passed all checks
+HLT,HLT,saved,2927,Passed all checks
+HOG,HOG,saved,2927,Passed all checks
+HOLX,HOLX,unavailable,0,Yahoo returned no price rows
+HON,HON,saved,2927,Passed all checks
+HONA,HONA,saved,49,Passed all checks
+HOOD,HOOD,saved,1273,Passed all checks
+HP,HP,saved,2927,Passed all checks
+HPE,HPE,saved,2727,Passed all checks
+HPQ,HPQ,saved,2927,Passed all checks
+HRB,HRB,saved,2927,Passed all checks
+HRL,HRL,saved,2927,Passed all checks
+HRS,HRS,unavailable,0,Yahoo returned no price rows
+HSIC,HSIC,saved,2927,Passed all checks
+HSP,HSP,unavailable,0,Yahoo returned no price rows
+HST,HST,saved,2927,Passed all checks
+HSY,HSY,saved,2927,Passed all checks
+HUBB,HUBB,saved,2927,Passed all checks
+HUM,HUM,saved,2927,Passed all checks
+HWM,HWM,saved,2465,Passed all checks
+IBKR,IBKR,saved,2927,Passed all checks
+IBM,IBM,saved,2927,Passed all checks
+ICE,ICE,saved,2927,Passed all checks
+IDXX,IDXX,saved,2927,Passed all checks
+IEX,IEX,saved,2927,Passed all checks
+IFF,IFF,saved,2927,Passed all checks
+ILMN,ILMN,saved,2927,Passed all checks
+INCY,INCY,saved,2927,Passed all checks
+INFO,INFO,saved,468,Passed all checks
+INTC,INTC,saved,2927,Passed all checks
+INTU,INTU,saved,2927,Passed all checks
+INVH,INVH,saved,2403,Passed all checks
+IP,IP,saved,2927,Passed all checks
+IPG,IPG,unavailable,0,Yahoo returned no price rows
+IPGP,IPGP,saved,2927,Passed all checks
+IQV,IQV,saved,2927,Passed all checks
+IR,IR,saved,2333,Passed all checks
+IRM,IRM,saved,2927,Passed all checks
+ISRG,ISRG,saved,2927,Passed all checks
+IT,IT,saved,2927,Passed all checks
+ITW,ITW,saved,2927,Passed all checks
+IVZ,IVZ,saved,2927,Passed all checks
+J,J,saved,2927,Passed all checks
+JBHT,JBHT,saved,2927,Passed all checks
+JBL,JBL,saved,2927,Passed all checks
+JCI,JCI,saved,2927,Passed all checks
+JEC,JEC,unavailable,0,Yahoo returned no price rows
+JEF,JEF,saved,2927,Passed all checks
+JKHY,JKHY,saved,2927,Passed all checks
+JNJ,JNJ,saved,2927,Passed all checks
+JNPR,JNPR,unavailable,0,Yahoo returned no price rows
+JOY,JOY,unavailable,0,Yahoo returned no price rows
+JPM,JPM,saved,2927,Passed all checks
+JWN,JWN,unavailable,0,Yahoo returned no price rows
+K,K,unavailable,0,Yahoo returned no price rows
+KDP,KDP,saved,2927,Passed all checks
+KEY,KEY,saved,2927,Passed all checks
+KEYS,KEYS,saved,2927,Passed all checks
+KHC,KHC,saved,2801,Passed all checks
+KIM,KIM,saved,2927,Passed all checks
+KKR,KKR,saved,2927,Passed all checks
+KLAC,KLAC,saved,2927,Passed all checks
+KMB,KMB,saved,2927,Passed all checks
+KMI,KMI,saved,2927,Passed all checks
+KMX,KMX,saved,2927,Passed all checks
+KO,KO,saved,2927,Passed all checks
+KORS,KORS,unavailable,0,Yahoo returned no price rows
+KR,KR,saved,2927,Passed all checks
+KRFT,KRFT,unavailable,0,Yahoo returned no price rows
+KSS,KSS,saved,2927,Passed all checks
+KSU,KSU,unavailable,0,Yahoo returned no price rows
+KVUE,KVUE,saved,829,Passed all checks
+L,L,saved,2927,Passed all checks
+LB,LB,saved,540,Passed all checks
+LDOS,LDOS,saved,2927,Passed all checks
+LEG,LEG,saved,2901,Passed all checks
+LEN,LEN,saved,2927,Passed all checks
+LH,LH,saved,2927,Passed all checks
+LHX,LHX,saved,2927,Passed all checks
+LII,LII,saved,2927,Passed all checks
+LIN,LIN,saved,2927,Passed all checks
+LITE,LITE,saved,2788,Passed all checks
+LKQ,LKQ,saved,2927,Passed all checks
+LLTC,LLTC,unavailable,0,Yahoo returned no price rows
+LLY,LLY,saved,2927,Passed all checks
+LM,LM,unavailable,0,Yahoo returned no price rows
+LMT,LMT,saved,2927,Passed all checks
+LNC,LNC,saved,2927,Passed all checks
+LNT,LNT,saved,2927,Passed all checks
+LO,LO,unavailable,0,Yahoo returned no price rows
+LOW,LOW,saved,2927,Passed all checks
+LRCX,LRCX,saved,2927,Passed all checks
+LULU,LULU,saved,2927,Passed all checks
+LUMN,LUMN,saved,2927,Passed all checks
+LUV,LUV,saved,2927,Passed all checks
+LVLT,LVLT,unavailable,0,Yahoo returned no price rows
+LVS,LVS,saved,2927,Passed all checks
+LW,LW,saved,2458,Passed all checks
+LYB,LYB,saved,2927,Passed all checks
+LYV,LYV,saved,2927,Passed all checks
+M,M,saved,2927,Passed all checks
+MA,MA,saved,2927,Passed all checks
+MAA,MAA,saved,2927,Passed all checks
+MAC,MAC,saved,2927,Passed all checks
+MAR,MAR,saved,2927,Passed all checks
+MAS,MAS,saved,2927,Passed all checks
+MAT,MAT,saved,2927,Passed all checks
+MCD,MCD,saved,2927,Passed all checks
+MCHP,MCHP,saved,2927,Passed all checks
+MCK,MCK,saved,2927,Passed all checks
+MCO,MCO,saved,2927,Passed all checks
+MDLZ,MDLZ,saved,2927,Passed all checks
+MDT,MDT,saved,2927,Passed all checks
+MET,MET,saved,2927,Passed all checks
+META,META,saved,2927,Passed all checks
+MGM,MGM,saved,2927,Passed all checks
+MHK,MHK,saved,2927,Passed all checks
+MJN,MJN,unavailable,0,Yahoo returned no price rows
+MKC,MKC,saved,2927,Passed all checks
+MKTX,MKTX,saved,2927,Passed all checks
+MLM,MLM,saved,2927,Passed all checks
+MMC,MMC,unavailable,0,Yahoo returned no price rows
+MMM,MMM,saved,2927,Passed all checks
+MNST,MNST,saved,2926,Passed all checks
+MO,MO,saved,2927,Passed all checks
+MOH,MOH,saved,2927,Passed all checks
+MOS,MOS,saved,2927,Passed all checks
+MPC,MPC,saved,2927,Passed all checks
+MPWR,MPWR,saved,2927,Passed all checks
+MRK,MRK,saved,2927,Passed all checks
+MRNA,MRNA,saved,1937,Passed all checks
+MRO,MRO,unavailable,0,Yahoo returned no price rows
+MRSH,MRSH,saved,2927,Passed all checks
+MRVL,MRVL,saved,2927,Passed all checks
+MS,MS,saved,2927,Passed all checks
+MSCI,MSCI,saved,2927,Passed all checks
+MSFT,MSFT,saved,2927,Passed all checks
+MSI,MSI,saved,2927,Passed all checks
+MTB,MTB,saved,2927,Passed all checks
+MTCH,MTCH,saved,2927,Passed all checks
+MTD,MTD,saved,2927,Passed all checks
+MU,MU,saved,2927,Passed all checks
+MUR,MUR,saved,2927,Passed all checks
+MWV,MWV,unavailable,0,Yahoo returned no price rows
+MXIM,MXIM,unavailable,0,Yahoo returned no price rows
+MYL,MYL,unavailable,0,Yahoo returned no price rows
+NAVI,NAVI,saved,2927,Passed all checks
+NBL,NBL,unavailable,0,Yahoo returned no price rows
+NBR,NBR,saved,2927,Passed all checks
+NCLH,NCLH,saved,2927,Passed all checks
+NDAQ,NDAQ,saved,2927,Passed all checks
+NDSN,NDSN,saved,2927,Passed all checks
+NEE,NEE,saved,2927,Passed all checks
+NEM,NEM,saved,2927,Passed all checks
+NFLX,NFLX,saved,2927,Passed all checks
+NFX,NFX,saved,35,Passed all checks
+NI,NI,saved,2927,Passed all checks
+NKE,NKE,saved,2927,Passed all checks
+NKTR,NKTR,saved,2927,Passed all checks
+NLOK,NLOK,unavailable,0,Yahoo returned no price rows
+NLSN,NLSN,unavailable,0,Yahoo returned no price rows
+NOC,NOC,saved,2927,Passed all checks
+NOV,NOV,saved,2927,Passed all checks
+NOW,NOW,saved,2927,Passed all checks
+NRG,NRG,saved,2927,Passed all checks
+NSC,NSC,saved,2927,Passed all checks
+NTAP,NTAP,saved,2927,Passed all checks
+NTRS,NTRS,saved,2927,Passed all checks
+NUE,NUE,saved,2927,Passed all checks
+NVDA,NVDA,saved,2927,Passed all checks
+NVR,NVR,saved,2927,Passed all checks
+NWL,NWL,saved,2927,Passed all checks
+NWS,NWS,saved,2927,Passed all checks
+NWSA,NWSA,saved,2927,Passed all checks
+NXPI,NXPI,saved,2927,Passed all checks
+O,O,saved,2927,Passed all checks
+ODFL,ODFL,saved,2927,Passed all checks
+OGN,OGN,saved,1325,Passed all checks
+OI,OI,saved,2927,Passed all checks
+OKE,OKE,saved,2927,Passed all checks
+OMC,OMC,saved,2927,Passed all checks
+ON,ON,saved,2927,Passed all checks
+ORCL,ORCL,saved,2927,Passed all checks
+ORLY,ORLY,saved,2927,Passed all checks
+OTIS,OTIS,saved,1616,Passed all checks
+OXY,OXY,saved,2927,Passed all checks
+PANW,PANW,saved,2927,Passed all checks
+PARA,PARA,saved,1388,Passed all checks
+PAYC,PAYC,saved,2927,Passed all checks
+PAYX,PAYX,saved,2927,Passed all checks
+PBCT,PBCT,unavailable,0,Yahoo returned no price rows
+PBI,PBI,saved,2927,Passed all checks
+PCAR,PCAR,saved,2927,Passed all checks
+PCG,PCG,saved,2927,Passed all checks
+PDCO,PDCO,unavailable,0,Yahoo returned no price rows
+PEAK,PEAK,unavailable,0,Yahoo returned no price rows
+PEG,PEG,saved,2927,Passed all checks
+PENN,PENN,saved,2927,Passed all checks
+PEP,PEP,saved,2927,Passed all checks
+PETM,PETM,unavailable,0,Yahoo returned no price rows
+PFE,PFE,saved,2927,Passed all checks
+PFG,PFG,saved,2927,Passed all checks
+PG,PG,saved,2927,Passed all checks
+PGR,PGR,saved,2927,Passed all checks
+PH,PH,saved,2927,Passed all checks
+PHM,PHM,saved,2927,Passed all checks
+PKG,PKG,saved,2927,Passed all checks
+PKI,PKI,unavailable,0,Yahoo returned no price rows
+PLD,PLD,saved,2927,Passed all checks
+PLTR,PLTR,saved,1481,Passed all checks
+PM,PM,saved,2927,Passed all checks
+PNC,PNC,saved,2927,Passed all checks
+PNR,PNR,saved,2927,Passed all checks
+PNW,PNW,saved,2927,Passed all checks
+PODD,PODD,saved,2927,Passed all checks
+POOL,POOL,saved,2927,Passed all checks
+PPG,PPG,saved,2927,Passed all checks
+PPL,PPL,saved,2927,Passed all checks
+PRGO,PRGO,saved,2927,Passed all checks
+PRU,PRU,saved,2927,Passed all checks
+PSA,PSA,saved,2927,Passed all checks
+PSKY,PSKY,saved,2927,Passed all checks
+PSX,PSX,saved,2927,Passed all checks
+PTC,PTC,saved,2927,Passed all checks
+PVH,PVH,saved,2927,Passed all checks
+PWR,PWR,saved,2927,Passed all checks
+PXD,PXD,unavailable,0,Yahoo returned no price rows
+PYPL,PYPL,saved,2801,Passed all checks
+Q,Q,saved,207,Passed all checks
+QCOM,QCOM,saved,2927,Passed all checks
+QEP,QEP,unavailable,0,Yahoo returned no price rows
+QRVO,QRVO,saved,2927,Passed all checks
+R,R,saved,2927,Passed all checks
+RAI,RAI,unavailable,0,Yahoo returned no price rows
+RCL,RCL,saved,2927,Passed all checks
+RDDT,RDDT,saved,608,Passed all checks
+RE,RE,unavailable,0,Yahoo returned no price rows
+REG,REG,saved,2927,Passed all checks
+REGN,REGN,saved,2927,Passed all checks
+RF,RF,saved,2927,Passed all checks
+RHI,RHI,saved,2927,Passed all checks
+RHT,RHT,unavailable,0,Yahoo returned no price rows
+RJF,RJF,saved,2927,Passed all checks
+RL,RL,saved,2927,Passed all checks
+RMD,RMD,saved,2927,Passed all checks
+ROK,ROK,saved,2927,Passed all checks
+ROL,ROL,saved,2927,Passed all checks
+ROP,ROP,saved,2927,Passed all checks
+ROST,ROST,saved,2927,Passed all checks
+RRC,RRC,saved,2927,Passed all checks
+RSG,RSG,saved,2927,Passed all checks
+RTN,RTN,unavailable,0,Yahoo returned no price rows
+RTX,RTX,saved,2927,Passed all checks
+RVTY,RVTY,saved,2927,Passed all checks
+SATS,SATS,unavailable,0,Yahoo returned no price rows
+SBAC,SBAC,saved,2927,Passed all checks
+SBNY,SBNY,saved,507,Passed all checks
+SBUX,SBUX,saved,2927,Passed all checks
+SCG,SCG,saved,872,Passed all checks
+SCHW,SCHW,saved,2927,Passed all checks
+SEDG,SEDG,saved,2870,Passed all checks
+SEE,SEE,unavailable,0,Yahoo returned no price rows
+SHW,SHW,saved,2927,Passed all checks
+SIAL,SIAL,unavailable,0,Yahoo returned no price rows
+SIVB,SIVB,unavailable,0,Yahoo returned no price rows
+SJM,SJM,saved,2927,Passed all checks
+SLB,SLB,saved,2927,Passed all checks
+SLG,SLG,saved,2927,Passed all checks
+SMCI,SMCI,saved,2927,Passed all checks
+SNA,SNA,saved,2927,Passed all checks
+SNDK,SNDK,saved,383,Passed all checks
+SNI,SNI,unavailable,0,Yahoo returned no price rows
+SNPS,SNPS,saved,2927,Passed all checks
+SO,SO,saved,2927,Passed all checks
+SOLS,SOLS,saved,212,Passed all checks
+SOLV,SOLV,saved,605,Passed all checks
+SPG,SPG,saved,2927,Passed all checks
+SPGI,SPGI,saved,2927,Passed all checks
+SPLS,SPLS,saved,151,Passed all checks
+SRCL,SRCL,unavailable,0,Yahoo returned no price rows
+SRE,SRE,saved,2927,Passed all checks
+STE,STE,saved,2927,Passed all checks
+STI,STI,saved,1082,Passed all checks
+STJ,STJ,unavailable,0,Yahoo returned no price rows
+STLD,STLD,saved,2927,Passed all checks
+STT,STT,saved,2927,Passed all checks
+STX,STX,saved,2927,Passed all checks
+STZ,STZ,saved,2927,Passed all checks
+SW,SW,saved,2927,Passed all checks
+SWK,SWK,saved,2927,Passed all checks
+SWKS,SWKS,saved,2927,Passed all checks
+SWN,SWN,unavailable,0,Yahoo returned no price rows
+SWY,SWY,unavailable,0,Yahoo returned no price rows
+SYF,SYF,saved,2927,Passed all checks
+SYK,SYK,saved,2927,Passed all checks
+SYMC,SYMC,unavailable,0,Yahoo returned no price rows
+SYY,SYY,saved,2927,Passed all checks
+T,T,saved,2927,Passed all checks
+TAP,TAP,saved,2927,Passed all checks
+TDC,TDC,saved,2927,Passed all checks
+TDG,TDG,saved,2927,Passed all checks
+TDY,TDY,saved,2927,Passed all checks
+TE,TE,saved,1663,Passed all checks
+TECH,TECH,saved,2927,Passed all checks
+TEL,TEL,saved,2927,Passed all checks
+TER,TER,saved,2927,Passed all checks
+TFC,TFC,saved,2927,Passed all checks
+TFX,TFX,saved,2927,Passed all checks
+TGNA,TGNA,unavailable,0,Yahoo returned no price rows
+TGT,TGT,saved,2927,Passed all checks
+THC,THC,saved,2927,Passed all checks
+TIF,TIF,unavailable,0,Yahoo returned no price rows
+TJX,TJX,saved,2927,Passed all checks
+TKO,TKO,saved,2927,Passed all checks
+TMK,TMK,unavailable,0,Yahoo returned no price rows
+TMO,TMO,saved,2927,Passed all checks
+TMUS,TMUS,saved,2927,Passed all checks
+TPL,TPL,saved,2927,Passed all checks
+TPR,TPR,saved,2927,Passed all checks
+TRGP,TRGP,saved,2927,Passed all checks
+TRIP,TRIP,saved,2927,Passed all checks
+TRMB,TRMB,saved,2927,Passed all checks
+TROW,TROW,saved,2927,Passed all checks
+TRV,TRV,saved,2927,Passed all checks
+TSCO,TSCO,saved,2927,Passed all checks
+TSLA,TSLA,saved,2927,Passed all checks
+TSN,TSN,saved,2927,Passed all checks
+TSS,TSS,unavailable,0,Yahoo returned no price rows
+TT,TT,saved,2927,Passed all checks
+TTD,TTD,saved,2494,Passed all checks
+TTWO,TTWO,saved,2927,Passed all checks
+TWC,TWC,unavailable,0,Yahoo returned no price rows
+TWTR,TWTR,unavailable,0,Yahoo returned no price rows
+TWX,TWX,saved,869,Passed all checks
+TXN,TXN,saved,2927,Passed all checks
+TXT,TXT,saved,2927,Passed all checks
+TYL,TYL,saved,2927,Passed all checks
+UA,UA,saved,2620,Passed all checks
+UAA,UAA,saved,2927,Passed all checks
+UAL,UAL,saved,2927,Passed all checks
+UBER,UBER,saved,1832,Passed all checks
+UDR,UDR,saved,2927,Passed all checks
+UHS,UHS,saved,2927,Passed all checks
+ULTA,ULTA,saved,2927,Passed all checks
+UNH,UNH,saved,2927,Passed all checks
+UNM,UNM,saved,2927,Passed all checks
+UNP,UNP,saved,2927,Passed all checks
+UPS,UPS,saved,2927,Passed all checks
+URI,URI,saved,2927,Passed all checks
+USB,USB,saved,2927,Passed all checks
+UTX,UTX,unavailable,0,Yahoo returned no price rows
+V,V,saved,2927,Passed all checks
+VAR,VAR,unavailable,0,Yahoo returned no price rows
+VEEV,VEEV,saved,2927,Passed all checks
+VFC,VFC,saved,2927,Passed all checks
+VIAB,VIAB,unavailable,0,Yahoo returned no price rows
+VIAC,VIAC,unavailable,0,Yahoo returned no price rows
+VICI,VICI,saved,2172,Passed all checks
+VLO,VLO,saved,2927,Passed all checks
+VLTO,VLTO,saved,724,Passed all checks
+VMC,VMC,saved,2927,Passed all checks
+VMRK,VMRK,saved,2927,Passed all checks
+VNO,VNO,saved,2927,Passed all checks
+VNT,VNT,saved,1485,Passed all checks
+VRSK,VRSK,saved,2927,Passed all checks
+VRSN,VRSN,saved,2927,Passed all checks
+VRT,VRT,saved,2025,Passed all checks
+VRTX,VRTX,saved,2927,Passed all checks
+VST,VST,saved,2484,Passed all checks
+VTR,VTR,saved,2927,Passed all checks
+VTRS,VTRS,saved,2927,Passed all checks
+VZ,VZ,saved,2927,Passed all checks
+WAB,WAB,saved,2927,Passed all checks
+WAT,WAT,saved,2927,Passed all checks
+WBA,WBA,unavailable,0,Yahoo returned no price rows
+WBD,WBD,saved,2927,Passed all checks
+WCG,WCG,unavailable,0,Yahoo returned no price rows
+WDAY,WDAY,saved,2927,Passed all checks
+WDC,WDC,saved,2927,Passed all checks
+WEC,WEC,saved,2927,Passed all checks
+WELL,WELL,saved,2927,Passed all checks
+WFC,WFC,saved,2927,Passed all checks
+WFM,WFM,unavailable,0,Yahoo returned no price rows
+WHR,WHR,saved,2927,Passed all checks
+WIN,WIN,unavailable,0,Yahoo returned no price rows
+WLTW,WLTW,unavailable,0,Yahoo returned no price rows
+WM,WM,saved,2927,Passed all checks
+WMB,WMB,saved,2927,Passed all checks
+WMT,WMT,saved,2927,Passed all checks
+WRB,WRB,saved,2927,Passed all checks
+WRK,WRK,unavailable,0,Yahoo returned no price rows
+WSM,WSM,saved,2927,Passed all checks
+WST,WST,saved,2927,Passed all checks
+WTW,WTW,saved,2927,Passed all checks
+WU,WU,saved,2927,Passed all checks
+WY,WY,saved,2927,Passed all checks
+WYNN,WYNN,saved,2927,Passed all checks
+XEC,XEC,unavailable,0,Yahoo returned no price rows
+XEL,XEL,saved,2927,Passed all checks
+XLNX,XLNX,unavailable,0,Yahoo returned no price rows
+XOM,XOM,saved,2927,Passed all checks
+XRAY,XRAY,saved,2927,Passed all checks
+XRX,XRX,saved,2927,Passed all checks
+XYL,XYL,saved,2927,Passed all checks
+XYZ,XYZ,saved,2704,Passed all checks
+YUM,YUM,saved,2927,Passed all checks
+ZBH,ZBH,saved,2927,Passed all checks
+ZBRA,ZBRA,saved,2927,Passed all checks
+ZION,ZION,saved,2927,Passed all checks
+ZTS,ZTS,saved,2927,Passed all checks

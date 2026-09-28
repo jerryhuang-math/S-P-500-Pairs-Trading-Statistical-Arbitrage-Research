@@ -1,0 +1,69 @@
+Ticker,Entry Date,Exit Date,Theoretical Coverage (%),Actual Coverage (%),Difference (%),Coverage During Membership (%),Classification
+ABNB,2023-09-18,2026-08-24,25.15,48.89,23.74,100.0,Normal membership period
+AET,2015-01-02,2018-11-28,33.65,33.69,0.03,100.0,Normal membership period
+AMTM,2024-10-01,2024-12-24,2.05,16.4,14.35,100.0,Normal membership period
+ANDV,2015-01-02,2018-09-28,32.22,32.22,0.0,99.89,Normal membership period
+APC,2015-01-02,2019-08-08,39.56,4.54,-35.02,0.0,Download issue
+APP,2025-09-08,2026-08-24,7.93,45.99,38.06,100.0,Normal membership period
+AVB,2015-01-02,2026-08-17,99.83,0.92,-98.91,0.75,Download issue
+BBBY,2015-01-02,2017-07-25,22.04,0.92,-21.11,0.0,Download issue
+BHF,2017-08-07,2019-04-01,14.18,78.2,64.02,100.0,Normal membership period
+CAM,2015-01-02,2016-04-01,10.73,7.58,-3.14,0.0,Download issue
+CARR,2020-04-03,2026-08-24,54.83,55.21,0.38,100.0,Normal membership period
+CEG,2023-05-17,2026-08-24,28.02,39.39,11.38,100.0,Normal membership period
+COIN,2025-05-19,2026-08-24,10.86,46.02,35.16,100.0,Normal membership period
+COL,2015-01-02,2018-11-26,33.58,49.91,16.33,98.07,Normal membership period
+CRWD,2024-06-24,2026-08-24,18.59,61.84,43.25,100.0,Normal membership period
+CSRA,2015-11-30,2018-04-03,20.12,0.31,-19.82,0.0,Download issue
+CTVA,2019-06-03,2026-08-24,62.08,62.25,0.17,100.0,Normal membership period
+CVNA,2026-01-02,2026-08-24,5.5,80.05,74.55,100.0,Normal membership period
+DASH,2025-03-25,2026-08-24,12.16,48.92,36.76,100.0,Normal membership period
+DDOG,2025-07-11,2026-08-24,9.63,59.48,49.85,100.0,Normal membership period
+DELL,2024-09-23,2026-08-24,16.43,86.03,69.59,100.0,Normal membership period
+DOW,2023-05-17,2026-08-24,28.02,63.82,35.8,100.0,Normal membership period
+EA,2015-01-02,2026-08-05,99.56,0.2,-99.35,0.1,Download issue
+EQR,2015-01-02,2026-08-17,99.83,0.48,-99.35,0.34,Download issue
+ESRX,2015-01-02,2018-12-20,34.16,34.16,0.0,99.9,Normal membership period
+EVHC,2016-12-02,2018-10-10,15.95,32.46,16.5,99.79,Normal membership period
+EXE,2025-03-25,2026-08-24,12.16,47.49,35.33,100.0,Normal membership period
+FB,2015-01-02,2022-06-08,63.96,9.98,-53.98,0.0,Download issue
+FDXF,2026-06-04,2026-08-24,1.91,2.12,0.2,100.0,Normal membership period
+FOX,2023-05-17,2026-08-24,28.02,63.99,35.98,100.0,Normal membership period
+FOXA,2023-05-17,2026-08-24,28.02,64.02,36.01,100.0,Normal membership period
+FTV,2016-07-05,2026-08-24,87.09,87.09,0.0,100.0,Normal membership period
+GEHC,2023-01-04,2026-08-24,31.16,31.57,0.41,100.0,Normal membership period
+GEV,2024-04-03,2026-08-24,20.5,20.64,0.14,100.0,Normal membership period
+HONA,2026-06-30,2026-08-24,1.33,1.67,0.34,100.0,Normal membership period
+HOOD,2025-09-08,2026-08-24,7.93,43.49,35.57,100.0,Normal membership period
+HWM,2020-04-06,2026-08-24,54.8,84.22,29.42,100.0,Normal membership period
+INFO,2017-06-02,2022-03-01,40.83,15.99,-24.84,0.0,Download issue
+INVH,2022-09-19,2026-08-24,33.69,82.1,48.41,100.0,Normal membership period
+IR,2023-05-17,2026-08-24,28.02,79.71,51.69,100.0,Normal membership period
+KVUE,2023-08-29,2026-08-24,25.59,28.32,2.73,100.0,Normal membership period
+LB,2015-01-02,2021-08-02,56.61,18.45,-38.16,0.0,Download issue
+LW,2018-12-03,2026-03-24,62.69,83.98,21.28,100.0,Normal membership period
+MRNA,2021-07-21,2026-08-24,43.7,66.18,22.48,100.0,Normal membership period
+NFX,2015-01-02,2019-02-14,35.43,1.2,-34.23,0.0,Download issue
+OGN,2021-06-04,2023-10-17,20.4,45.27,24.87,100.0,Normal membership period
+OTIS,2020-04-03,2026-08-24,54.83,55.21,0.38,100.0,Normal membership period
+PARA,2022-02-17,2025-08-08,29.76,47.42,17.66,100.0,Normal membership period
+PLTR,2024-09-23,2026-08-24,16.43,50.6,34.16,100.0,Normal membership period
+Q,2025-11-06,2026-08-24,6.8,7.07,0.27,100.0,Normal membership period
+RDDT,2026-08-18,2026-08-24,0.17,20.77,20.6,100.0,Normal membership period
+SBNY,2021-12-20,2023-03-14,10.56,17.32,6.76,0.0,Download issue
+SCG,2015-01-02,2018-12-31,34.37,29.79,-4.58,86.68,Download issue
+SNDK,2015-01-02,2026-08-24,17.9,13.09,-4.82,34.73,Download issue
+SOLS,2025-10-31,2025-12-31,1.43,7.24,5.81,100.0,Normal membership period
+SOLV,2024-04-02,2026-08-24,20.53,20.67,0.14,100.0,Normal membership period
+SPLS,2015-01-02,2017-09-12,23.2,5.16,-18.04,0.0,Download issue
+STI,2015-01-02,2019-12-06,42.43,36.97,-5.47,0.0,Download issue
+TE,2015-01-02,2016-06-30,12.88,56.82,43.94,0.0,Download issue
+TTD,2025-07-18,2026-08-24,9.46,85.21,75.74,100.0,Normal membership period
+TWX,2015-01-02,2018-06-14,29.69,29.69,0.0,99.88,Normal membership period
+UA,2016-04-08,2022-06-17,53.33,89.51,36.18,100.0,Normal membership period
+UBER,2023-12-18,2026-08-24,22.96,62.59,39.63,100.0,Normal membership period
+VICI,2022-06-08,2026-08-24,36.08,74.21,38.13,100.0,Normal membership period
+VLTO,2023-10-06,2026-08-24,24.67,24.74,0.07,100.0,Normal membership period
+VNT,2020-10-12,2021-03-19,3.76,50.73,46.98,100.0,Normal membership period
+VRT,2026-03-25,2026-08-24,3.59,69.18,65.6,100.0,Normal membership period
+VST,2024-05-08,2026-08-24,19.64,84.87,65.22,100.0,Normal membership period
