@@ -1,12 +1,10 @@
 # Pairs Trading Project
 
-> **Writing template:** Replace every `[TODO: ...]` with your own writing. The notebook links and implementation notes describe the current workspace; confirm them against your final run. Mark unfinished experiments as planned, and remove these writing instructions before publishing. Your previous README text is preserved at the end for reference.
+This project investigates pairs trading among historical S&P 500 constituents using daily adjusted prices, industry grouping, and rolling cointegration tests. Data preparation and initial strategy experiments are implemented; parameter tuning and final out-of-sample evaluation remain in progress.
 
-[TODO: Write a short overview explaining the research question, stock universe, approach, and main finding or current progress.]
-
-**Author:** [TODO: Name]  
-**Project status:** [TODO: Research in progress / completed stages]  
-**Last updated:** [TODO: Date]
+**Author:** Jerry Huang
+**Project status:** Research in progress 
+**Last updated:** 10/1/2026
 
 ## Contents
 
@@ -25,33 +23,35 @@
 - [Limitations](#limitations)
 - [Lessons and next steps](#lessons-and-next-steps)
 - [References and project information](#references-and-project-information)
-- [Previous README notes](#previous-readme-notes)
+
+- [Parameter grid search](#parameter-grid-search)
+- [Industry-specific strategy](#industry-specific-strategy)
 
 ## Project overview
 
-[TODO: Explain why you chose pairs trading and what you want to investigate.]
+Pairs trading offers a way to study whether economically related stocks show temporary price divergences that subsequently reverse.
 
-- **Research question:** [TODO: State a specific, testable question.]
-- **Hypothesis:** [TODO: Explain the expected relationship and why it may persist or fail.]
-- **Scope:** [TODO: Market, universe, dates, frequency, and whether this is individual-pair or portfolio research.]
-- **Success criteria:** [TODO: Define how you judge the strategy and which benchmark you use.]
+- **Research question:** Can industry-group screening and rolling cointegration tests identify pairs with profitable mean reversion after transaction costs?
+- **Hypothesis:** Related companies may share common price drivers, but changes in their businesses or market conditions can break the relationship.
+- **Scope:** Historical S&P 500 constituents, daily prices from January 2015 through August 2026, and rolling pair selection with portfolio evaluation.
+- **Success criteria:** Evaluate net returns, Sharpe ratio, and maximum drawdown, including sensitivity to trading costs. A final benchmark comparison is still planned.
 
-[TODO: Describe the full workflow in one paragraph: download → quality checks → classification → pair selection → validation → final testing.]
+The workflow downloads price histories, checks membership coverage and stock splits, assigns GICS classifications, screens candidate pairs, and evaluates trading rules in rolling windows before a separate final holdout evaluation.
 
 ## Progress and contributions
 
-[TODO: Summarize your own work, decisions, and improvements. Distinguish implemented code, reviewed outputs, and unfinished work.]
+The work so far focuses on preparing a historical stock universe, investigating data gaps and ticker identity, enriching industry classifications, and implementing initial pairs-trading experiments.
 
 | Stage | Existing work to describe | Status / main contribution |
 | --- | --- | --- |
-| Data download | Historical constituents, ticker formatting, retries, download reports | [TODO] |
-| Coverage | Membership filtering, missing histories, company identity review, alternative sources | [TODO] |
-| Split analysis | Event checks and investigation of flagged observations | [TODO] |
-| GICS | Classification download, researched additions, source tracking | [TODO] |
-| Visualization | Adjusted-price charts for individual stocks | [TODO] |
-| Pair selection | Within-sub-industry correlations, log-price OLS spreads, ADF screening | [TODO] |
-| Validation | Independent candidate-pair simulations and saved metrics | [TODO] |
-| Final test | Separate backtest notebook is currently empty | [TODO: Planned work] |
+| Data download | Historical constituents, ticker formatting, retries, download reports | Implemented; 737 tickers requested and 616 histories saved |
+| Coverage | Membership filtering, missing histories, company identity review, alternative sources | Implemented; low-coverage and ticker-identity issues remain |
+| Split analysis | Event checks and investigation of flagged observations | Implemented checks; flagged events require review |
+| GICS | Classification download, researched additions, source tracking | 616 stocks mapped to sector and industry group |
+| Visualization | Adjusted-price charts for individual stocks | Implemented adjusted-price chart generation |
+| Pair selection | Within-sub-industry correlations, log-price OLS spreads, ADF screening | Implemented initial and rolling selection experiments |
+| Validation | Independent candidate-pair simulations and saved metrics | Initial pair simulations and a completed rolling training run saved |
+| Final test | Separate backtest notebook is currently empty | Planned; final evaluation is unfinished |
 
 ## Repository structure
 
@@ -65,7 +65,8 @@ pairs_trading_project/
 │   ├── 02_2_split_analysis.ipynb
 │   ├── 02_3_gics_download.ipynb
 │   ├── 02_4_stock_time_series.ipynb
-│   ├── 03_pair_selection.ipynb
+│   ├── 03_pair_selection_first_result.ipynb
+│   ├── 03_pair_selection_try.ipynb
 │   └── 04_backtest.ipynb
 ├── data/
 │   ├── historical/
@@ -77,13 +78,14 @@ pairs_trading_project/
 ├── outputs/
 │   ├── stock_time_series/
 │   ├── validation_trial/
-│   └── validation_all_pairs/
+│   ├── validation_all_pairs/
+│   └── rolling_training/
 └── reports/
     ├── coverage_readme.md
     └── split_analysis_readme.md
 ```
 
-[TODO: Explain which files are raw, generated, manually reviewed, or required before execution. Explain whether `validation_trial` is an earlier experiment and which outputs are authoritative.]
+`data/historical` contains downloaded prices; `data/Filter_historical` contains membership-filtered histories. Quality reports and classification source logs record checks and researched additions. `outputs` contains generated artifacts. `validation_trial` and `validation_all_pairs` are earlier experiments; `rolling_training` contains the newer rolling runs and their parameter manifests. Final results are not yet established.
 
 ## Setup and reproduction
 
@@ -91,7 +93,7 @@ pairs_trading_project/
 
 Environment specification: [environment_ptp.yml](environment_ptp.yml).
 
-[TODO: Record the Python version, operating system, architecture, and package versions actually used for your final results. The supplied Conda export contains platform-specific builds and an absolute prefix; document any changes needed on another machine. Coverage also imports `pandas_market_calendars`, which is absent from this export.]
+The supplied Conda export specifies Python 3.14.7 and Linux ARM64 builds, with an absolute environment prefix. On another platform, remove the `prefix` line and adapt platform-specific dependencies. The notebooks also require `pandas_market_calendars`, which is missing from this export. The environment has not been verified on other platforms.
 
 ```bash
 # Run from the project root; verify this setup on your target platform.
@@ -100,7 +102,14 @@ conda activate venv_ptp
 jupyter lab
 ```
 
-[TODO: Supply the repository download/clone instructions, any additional dependency installation steps, and required data access setup. Document credentials by variable or prompt name only.]
+Clone the repository before creating the environment:
+
+```bash
+git clone https://github.com/jerryhuang-math/S-P-500-Pairs-Trading-Statistical-Arbitrage-Research.git
+cd S-P-500-Pairs-Trading-Statistical-Arbitrage-Research
+```
+
+After activating the environment, install the additional calendar dependency with `pip install pandas_market_calendars`. Downloads require network access. Optional alternative-source checks may prompt for credentials; these are not required for the Yahoo Finance download.
 
 ### Execution order
 
@@ -113,49 +122,49 @@ Run each implemented notebook from top to bottom in the following order, checkin
 | 3 | [Split analysis](notebooks/02_2_split_analysis.ipynb) | Filtered price input, event requests, manual review |
 | 4 | [GICS download](notebooks/02_3_gics_download.ipynb) | Mapping inputs and preserved researched classifications |
 | 5 | [Price charts](notebooks/02_4_stock_time_series.ipynb) | Chart generation and output location |
-| 6 | [Pair selection and validation](notebooks/03_pair_selection.ipynb) | Candidate generation, validation rules, saved results |
+| 6 | [Rolling pair selection and training](notebooks/03_pair_selection_try.ipynb) | Candidate generation, validation rules, saved results |
 | 7 | [Final backtest](notebooks/04_backtest.ipynb) | Planned: this file is currently empty and cannot yet be executed |
 
-[TODO: State the working directory expected by each notebook, approximate runtime/storage, any manual steps, and whether reruns overwrite outputs or retain older files.]
+Start notebook kernels in `notebooks/` because several notebooks use relative paths such as `../data`. Review flagged histories and classification sources before strategy evaluation. Reruns can overwrite data, charts, and earlier simulation files; rolling experiments create separate run folders. Runtime and storage requirements have not yet been measured.
 
 ### Reproduction record
 
 | Item | Value |
 | --- | --- |
-| Code revision or archived version | [TODO] |
-| Data snapshot / retrieval dates | [TODO] |
-| Last successful complete run | [TODO] |
-| Parameters and random seeds, if applicable | [TODO] |
-| Expected output files and sanity checks | [TODO] |
-| Known setup or execution problems | [TODO] |
+| Code revision or archived version | Not yet archived for final results |
+| Data snapshot / retrieval dates | Live downloads; retrieval dates are not consistently recorded |
+| Last successful complete run | Final end-to-end run pending; a rolling training run is saved under `outputs/rolling_training/run_20260926T180847_806472Z` |
+| Parameters and random seeds, if applicable | Rolling-run settings and package versions are recorded in each `manifest.json` |
+| Expected output files and sanity checks | Download reports, filtered histories, GICS mapping, charts, and simulation metrics; review missing data before proceeding |
+| Known setup or execution problems | Platform-specific Conda export, unresolved historical prices, and unfinished final testing |
 
 ## Data sources and universe
 
-[TODO: Explain how historical S&P 500 membership defines the universe and why historical company identity matters.]
+The universe includes companies that appeared in historical S&P 500 membership during the study period. Prices are then filtered to membership dates. Historical membership reduces reliance on today’s constituents, but unavailable histories and reused tickers still require review.
 
 | Dataset | Source and version / retrieval date | Purpose | Known gaps |
 | --- | --- | --- | --- |
-| Historical S&P 500 constituents | [TODO: Exact source] | Membership dates and ticker universe | [TODO] |
-| Daily stock prices | Yahoo Finance through yfinance; [TODO: snapshot] | Price histories | [TODO] |
-| Corporate-action events | Yahoo Finance; [TODO: snapshot] | Split checks | [TODO] |
-| Alternative price histories | [TODO: Sources attempted, including Stooq; distinguish successful replacements] | Missing or incorrect histories | [TODO] |
-| Company classifications | [TODO: Current constituent source and researched sources] | Industry grouping | Static rather than point-in-time |
-| GICS hierarchy | [TODO: Source and hierarchy version] | Classification codes | [TODO] |
+| Historical S&P 500 constituents | [historical_sp500_constituents](https://github.com/chinobing/historical_sp500_constituents); live CSV | Membership dates and ticker universe | Ticker changes and historical company identities need reconciliation |
+| Daily stock prices | Yahoo Finance through yfinance; live downloads | Price histories | 121 requested histories unavailable in the saved download report |
+| Corporate-action events | Yahoo Finance; live requests | Split checks | Flagged events require interpretation alongside adjusted prices |
+| Alternative price histories | Stooq and other recovery attempts in the coverage notebook | Missing or incorrect histories | Recovery remains unfinished |
+| Company classifications | [S&P 500 constituent dataset](https://github.com/datasets/s-and-p-500-companies) and researched additions documented in `data/gics/gics2_gics4_sources.csv` | Industry grouping | Static rather than point-in-time |
+| GICS hierarchy | March 2023 hierarchy from the GICS mapping linked in the classification notebook | Classification codes | Historical classification changes are not represented |
 
-- **Download interval:** [TODO: Confirm; current download settings are 2015-01-01 to 2026-08-25. Explain end-date inclusivity.]
-- **Coverage interval:** [TODO: Confirm; current coverage settings end on 2026-08-24.]
-- **Frequency and calendar:** [TODO: Daily observations, exchange calendar, time zones.]
-- **Price field:** [TODO: Explain `Close` versus `Adj Close`, and identify the field used at each stage.]
-- **Universe counts:** [TODO: Requested, downloaded, retained, classified, and eligible for selection.]
+- **Download interval:** 2015-01-01 to 2026-08-25; the price-download end date is exclusive.
+- **Coverage interval:** 2015-01-01 through 2026-08-24, inclusive.
+- **Frequency and calendar:** Daily observations; coverage uses the NYSE session calendar. CSV dates are stored as calendar dates.
+- **Price field:** Coverage checks use nonmissing `Close`; charts and strategy calculations use `Adj Close` to account for price adjustments.
+- **Universe counts:** 737 requested, 616 saved, and 616 mapped to sector and industry group. Eligibility varies by notebook and training window.
 
 ### Data schema
 
 | File / dataset | Important columns | Meaning and units |
 | --- | --- | --- |
-| Individual stock CSV | [TODO: Exact columns] | [TODO: Date format, currency, adjustments, volume] |
-| Membership data | [TODO] | [TODO: Snapshot/effective-date interpretation] |
-| GICS mapping | [TODO] | [TODO: Code levels and intentional blanks] |
-| Download and quality reports | [TODO] | [TODO: Status fields and reasons] |
+| Individual stock CSV | `Date`, `Open`, `High`, `Low`, `Close`, `Adj Close`, `Volume` | Dates in YYYY-MM-DD format; US stock prices in dollars, adjusted close as supplied by Yahoo, volume in shares |
+| Membership data | `date`, `tickers` | Constituent lists by date, used to infer membership periods |
+| GICS mapping | `Ticker`, `Company`, sector / industry group / industry / sub-industry codes and names | GICS codes have 2, 4, 6, and 8 digits; researched additions intentionally omit finer classifications |
+| Download and quality reports | `original_ticker`, `yahoo_ticker`, `status`, `rows`, `message` in the download report | Download outcome and row count; coverage reports identify insufficient histories |
 
 ## Data preparation and quality checks
 
@@ -450,6 +459,14 @@ log(P_A,t) = alpha + beta × log(P_B,t) + spread_t
 
 [TODO: Explain re-entry, missing-price checks, and next-close execution consequences. Document omitted borrow fees, financing, and cash interest, and the use of adjusted prices as a total-return proxy.]
 
+## Parameter grid search
+
+Planned: compare a small grid of formation lengths, trading windows, correlation thresholds, and entry/exit/stop levels using rolling evaluation within the training data. Record each configuration and compare net returns, Sharpe ratio, drawdown, and trade counts. Freeze the selected settings before evaluating the final holdout.
+
+## Industry-specific strategy
+
+Planned: compare pairs-trading performance across GICS industry groups to examine where mean reversion is most consistent. Test any industry-specific settings within the training data, then compare them with the shared baseline on the final holdout.
+
 ### Evaluation and saved artifacts
 
 [TODO: Describe evaluating each pair independently. Explain that this does not establish the performance of a portfolio holding all pairs together.]
@@ -543,10 +560,3 @@ Current validation outputs are saved under `outputs/validation_all_pairs`: `summ
 [TODO: State your contributions and acknowledge any collaborators, tools, or external work as appropriate.]
 
 [TODO: Specify the code license if you choose one, and separately explain data availability and redistribution conditions. Add contact or contribution instructions if you want them.]
-
-## Previous README notes
-
-These are your original notes, retained unchanged as drafting material. Some paths, counts, and interpretations may reflect an earlier run; reconcile them with the current notebooks before moving them into the sections above.
-
-<details>
-<summary>Original coverage and split analysis text</summary>
