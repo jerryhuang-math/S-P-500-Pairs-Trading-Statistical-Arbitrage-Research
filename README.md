@@ -9,7 +9,6 @@ This project investigates pairs trading among historical S&P 500 constituents us
 ## Contents
 
 - [Project overview](#project-overview)
-- [Progress and contributions](#progress-and-contributions)
 - [Repository structure](#repository-structure)
 - [Setup and reproduction](#setup-and-reproduction)
 - [Data sources and universe](#data-sources-and-universe)
@@ -37,21 +36,6 @@ Pairs trading offers a way to study whether economically related stocks show tem
 - **Success criteria:** Evaluate net returns, Sharpe ratio, and maximum drawdown, including sensitivity to trading costs. A final benchmark comparison is still planned.
 
 The workflow downloads price histories, checks membership coverage and stock splits, assigns GICS classifications, screens candidate pairs, and evaluates trading rules in rolling windows before a separate final holdout evaluation.
-
-## Progress and contributions
-
-The work so far focuses on preparing a historical stock universe, investigating data gaps and ticker identity, enriching industry classifications, and implementing initial pairs-trading experiments.
-
-| Stage | Existing work to describe | Status / main contribution |
-| --- | --- | --- |
-| Data download | Historical constituents, ticker formatting, retries, download reports | Implemented; 737 tickers requested and 616 histories saved |
-| Coverage | Membership filtering, missing histories, company identity review, alternative sources | Implemented; low-coverage and ticker-identity issues remain |
-| Split analysis | Event checks and investigation of flagged observations | Implemented checks; flagged events require review |
-| GICS | Classification download, researched additions, source tracking | 616 stocks mapped to sector and industry group |
-| Visualization | Adjusted-price charts for individual stocks | Implemented adjusted-price chart generation |
-| Pair selection | Within-sub-industry correlations, log-price OLS spreads, ADF screening | Implemented initial and rolling selection experiments |
-| Validation | Independent candidate-pair simulations and saved metrics | Initial pair simulations and a completed rolling training run saved |
-| Final test | Separate backtest notebook is currently empty | Planned; final evaluation is unfinished |
 
 ## Repository structure
 
@@ -126,17 +110,6 @@ Run each implemented notebook from top to bottom in the following order, checkin
 | 7 | [Final backtest](notebooks/04_backtest.ipynb) | Planned: this file is currently empty and cannot yet be executed |
 
 Start notebook kernels in `notebooks/` because several notebooks use relative paths such as `../data`. Review flagged histories and classification sources before strategy evaluation. Reruns can overwrite data, charts, and earlier simulation files; rolling experiments create separate run folders. Runtime and storage requirements have not yet been measured.
-
-### Reproduction record
-
-| Item | Value |
-| --- | --- |
-| Code revision or archived version | Not yet archived for final results |
-| Data snapshot / retrieval dates | Live downloads; retrieval dates are not consistently recorded |
-| Last successful complete run | Final end-to-end run pending; a rolling training run is saved under `outputs/rolling_training/run_20260926T180847_806472Z` |
-| Parameters and random seeds, if applicable | Rolling-run settings and package versions are recorded in each `manifest.json` |
-| Expected output files and sanity checks | Download reports, filtered histories, GICS mapping, charts, and simulation metrics; review missing data before proceeding |
-| Known setup or execution problems | Platform-specific Conda export, unresolved historical prices, and unfinished final testing |
 
 ## Data sources and universe
 
