@@ -341,7 +341,7 @@ Source: [03_pair_selection.ipynb](notebooks/03_pair_selection.ipynb).
 
 Overall, rolling window training and backtesting is used instead of static training/ validating/ testing split. This is becuase the cointergration relationship of the two stocks mostly would not continue for a long time. Therefore, the dataset is split into two parts. The first part is for training and adjusting the strategy. The second part is for validation, using the last three years of the data. In this notebook, the validation set is not used. The rolling window has a training time span of 12 month and a trading time of 2 month. For each rolling window, we use the same methodology to select the pairs and determine the trading strategy. We run through the correlation between every two stocks in a given industry group (4 code GICS). We select the stock pairs that have log Adjusted Close correlation greater than 0.8 to proceed to the cointergration test. Then, Engle-Granger test is implemented. The Engle-Granger test first determine the linear regression coefficient of the spread. Then, it applys the Augmented Dickey-Fuller (ADF) to determine the stationarity of the spread. The significant level is set to be 5%. We use Engle-Granger-specific critical value. Since the regression A on B vs B on A is different, we test both directions. Using this procedjure, we selected pairs and the hedge ratio. We then trade these pairs according to their hedge ratio on the next 2 month. In the two-month trading period, the hedge ratio, mean, and standard deviation is frozen. 
 
-The entry point, exit point, stop loss point are initially set as 1.5 s.d., 0.5 s.d, and 3 s.d. For pairs reaching stop-loss, they will be blacklisted  for the rest of the trading window. For multiple pairs, the capital allocation method is equal-weight, independent positions. The transaction cost sets to 10 bps per leg.
+The entry point, exit point, stop loss point are initially set as 1.5 s.d., 0.5 s.d, and 3 s.d. For pairs reaching stop-loss, they will be blacklisted  for the rest of the trading window. For multiple pairs, the capital allocation method is equal-weight, independent positions. The transaction cost sets to 5 bps per leg.
 
 After we walk through every rolling window, we chain the 2-month returns into one continuous equity curve. We compute a set of parameters on the full curve determining the performance of this strategy.
 
@@ -427,14 +427,105 @@ log(P_A,t) = alpha + beta × log(P_B,t) + spread_t
 | Entry exposure | 100% gross after entry costs | [TODO] |
 | Leg weights | `direction × [1, -beta] / (1 + abs(beta))` | [TODO] |
 | Position holding | Fixed adjusted-price units until exit; no daily rebalancing | [TODO] |
-| Costs | Default 10 bps of traded value on both legs at entry and exit | [TODO] |
+| Costs | Default 5 bps of traded value on both legs at entry and exit | [TODO] |
 | End of period | Liquidate remaining positions at final validation close | [TODO] |
 
 [TODO: Explain re-entry, missing-price checks, and next-close execution consequences. Document omitted borrow fees, financing, and cash interest, and the use of adjusted prices as a total-return proxy.]
 
+# Why essentially zero edge?
+
+We are going to test the following hypothesis in order to see which step failed:
+
+- The spread is genuinely mean-reverting (cointegration is real, not spurious).
+
+- The mean-reversion happens fast enough relative to your holding period.
+
+- The z-score entry/exit thresholds capture the reversion (not too late, not too early).
+
+- The spread's mean and variance are stable between training and trading.
+
+- You're not trading too many pairs (multiple testing → false positives).
+
+
+
 ## Parameter grid search
 
 Planned: compare a small grid of formation lengths, trading windows, correlation thresholds, and entry/exit/stop levels using rolling evaluation within the training data. Record each configuration and compare net returns, Sharpe ratio, drawdown, and trade counts. Freeze the selected settings before evaluating the final holdout.
+
+
+| Parameter | Choices supported by the sources | Interpretation for your project |
+|---|---|---|
+| `formation_months` | **12** in established empirical studies; **3** in a QuantConnect intraday example | **12** is the clearest literature baseline. Shorter windows represent a more adaptive strategy. |
+| `trading_months` | **6** in established empirical studies; **3** in the QuantConnect example; monthly reselection in some public implementations | **6** is the academic benchmark. Your **2** is a reasonable experimental choice, but less directly supported by these examples. |
+| `correlation_threshold` | **0\.8–0.9** in implementations that use a correlation prefilter | **0\.8** is defensible, but there is no universal academic cutoff. |
+| `eg_significance` | **0\.05** in several cointegration implementations | **0\.05** is a conventional baseline; **0\.01** is a useful stricter comparison. |
+| `entry_z` | **2\.0** repeatedly; approximately **2\.33** in the QuantConnect example | **2\.0** has stronger support as a default than your **1\.5**. |
+| `exit_z` | Convergence in the classic distance strategy; **0\.5** in several modern implementations | **0** and **0\.5** are useful benchmarks, with different exit behavior. |
+| `stop_z` | **3\.0**, **3\.5**, and **4\.0** in public implementations | **3\.0** is a recognizable choice, but there is no standard stop across the literature. |
+
+These are recurring examples, not a statistical survey of all practitioners.
+
+**What the papers actually support**
+
+Gatev, Goetzmann, and Rouwenhorst’s classic strategy selects pairs using a **12-month formation period**, trades them over the following **6 months**, enters when normalized prices diverge by **2 historical standard deviations**, and exits when prices converge/cross or the trading period ends. It is a **distance-based strategy**: translating it into your configuration does not supply an Engle–Granger cutoff, correlation cutoff, or a 3-sigma stop. [Gatev et al., original paper](<https://www.nber.org/papers/w7032>)
+
+The **12/6-month structure also appears in cointegration research**. Rad, Low, and Faff’s comparison of distance, cointegration, and copula methods keeps formation and trading periods at 12 and 6 months. This makes 12/6 a useful benchmark beyond the original distance method. [Rad, Low \& Faff, 2016](<https://www.tandfonline.com/doi/abs/10.1080/14697688.2016.1164337>)
+
+**What other implementations use**
+
+The following examples show why a single universal seven-parameter set would be misleading:
+
+| Source | Formation / trading | Correlation | Cointegration significance | Entry / exit / stop |
+|---|---|---|---|---|
+| QuantConnect dynamic intraday example | **3 / 3 months** | **0\.9** | **0\.05** | Approximately **2\.33 / 0.5 / 4.0** |
+| `pangshengwei/pair-trading` | Not specified as comparable windows in its documented configuration | — | **0\.05** | **2\.0 / 0.5 / 3.0** |
+| `Kiril2206/pairs-trading-framework` | Uses a historical sample and out-of-sample split | — | **0\.05** | **2\.0 / 0.5 / —** |
+
+Sources: [QuantConnect](<https://www.quantconnect.com/research/15347/intraday-dynamic-pairs-trading-using-correlation-and-cointegration-approach/>), [pangshengwei implementation](<https://github.com/pangshengwei/pair-trading>), [Kiril2206 implementation](<https://github.com/Kiril2206/pairs-trading-framework>). Repository defaults document what those authors chose; they do not establish profitability.
+
+
+Your grid contains **1,248 feasible parameter combinations**:
+
+- **13** formation/trading combinations satisfying `trading_months ≤ formation_months`.
+- **4** correlation/EG combinations.
+- **24** entry/exit/stop combinations.
+
+All your z-score combinations satisfy `exit_z < entry_z < stop_z`.
+
+**I suggest keeping the complete grid, while reusing intermediate calculations.** You can test every combination without repeating the expensive pair-selection work 1,248 times.
+
+1. **Cache pair selection and spread estimates.** For each formation window, calculate correlations, Engle–Granger results, hedge ratios, and spread statistics once. Save the actual correlations and p-values, then apply your alternative thresholds to those results.
+2. **Reuse the same spread paths across the 24 trading-rule combinations.** Changing entry, exit, or stop thresholds requires another trading simulation, but does not require rerunning cointegration.
+3. **Run independent batches in parallel.** Use a bounded number of workers based on available memory. Writing thousands of files simultaneously can itself become a bottleneck.
+4. **Save each completed combination immediately and support resuming.** An interrupted search should only need to run the unfinished combinations.
+
+Exact reuse depends on whether combinations share formation dates. A different trading period can change the window schedule, so the cache should identify the actual formation start/end dates and estimation settings.
+
+For the exported results, I would use **one folder per combination**, with a readable parameter identifier:
+
+| File | Contents |
+|---|---|
+| `parameters.json` | All seven parameters, dates, transaction costs, and run settings |
+| `trades.csv` | Pair, direction, entry/exit dates, prices, hedge ratio, quantities, entry/exit z-scores, exit reason, costs, and realized P\&L |
+| `portfolio_daily.csv` | Daily return, equity, exposure, and number of open positions |
+| `selected_pairs.csv` | Formation window, selected pair, correlation, EG p-value, and spread estimates |
+
+Then export a single **`grid_summary.csv`** containing one row per combination. The notebook cell should display that as a sortable table rather than print 1,248 separate reports. Useful columns are:
+
+- All seven parameters.
+- Total return, annualized return, annualized volatility, Sharpe ratio, and maximum drawdown.
+- Trade count, win rate, average net trade return, average holding period, and stop-exit rate.
+- Number of evaluated windows, eligible pairs, and days with exposure.
+- Completion status, runtime, and output-folder path.
+
+Include combinations with **no trades** in the summary, with undefined metrics marked clearly.
+
+The main issue beyond runtime is **making comparisons fair**. Longer formation periods otherwise start trading later and face different market conditions. I would use a common evaluation start after the longest formation period, a common end date, and an explicit rule for incomplete final trading windows. Keep transaction costs and portfolio construction identical across combinations.
+
+Also, treat this as a **joint grid search**, not a test of 1,248 economically independent strategies. Pick parameters using training/validation periods and reserve your existing holdout for the final selected configuration. Look for a region of reasonably good neighboring settings, rather than choosing solely by the highest Sharpe ratio.
+
+**My recommendation:** run the full grid with caching and resumable outputs. First benchmark a few representative batches—including a 3-month formation case, which may create more windows—to estimate runtime. If it is still too slow, use a shorter development period for all 1,248 combinations, then evaluate a preselected shortlist over the full training history. That fallback would no longer test every combination over the full history, so I would prefer caching first
+
 
 ## Industry-specific strategy
 
@@ -533,3 +624,19 @@ Current validation outputs are saved under `outputs/validation_all_pairs`: `summ
 [TODO: State your contributions and acknowledge any collaborators, tools, or external work as appropriate.]
 
 [TODO: Specify the code license if you choose one, and separately explain data availability and redistribution conditions. Add contact or contribution instructions if you want them.]
+
+### Transaction cost scenarios
+
+The main notebooks `03_pair_selection_first_result.ipynb` and
+`04_joint_parameter_grid_search.ipynb` use **5 bps per leg at entry and exit**.
+Run each notebook from a fresh kernel to generate the backtest and the full
+1,248-combination grid search. Their outputs go to `outputs/rolling_training/`
+and `outputs/joint_grid_search/`.
+
+The companion notebooks `03_pair_selection_first_result_zero_cost.ipynb` and
+`04_joint_parameter_grid_search_zero_cost.ipynb` use **zero transaction costs**.
+Run them from fresh kernels for a separate backtest and the same full grid search.
+They recompute holdings and equity with costs disabled, and save to
+`outputs/rolling_training_zero_cost/` and `outputs/joint_grid_search_zero_cost/`.
+Both scenarios retain the historical Treasury benchmark in the Sharpe calculation.
+The previous 10 bps backtest, grid-search, and validation output files were removed.
