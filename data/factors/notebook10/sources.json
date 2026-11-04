@@ -1,0 +1,17 @@
+{
+  "sp500_yahoo.json": {
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1464739200&period2=1692921600&interval=1d",
+    "retrieved_utc": "2026-10-24T07:08:14.731470+00:00",
+    "sha256": "3a87e8bfbb176c5fa81140ea88430105b4523e2ce6d76b9399a58d095d09d122"
+  },
+  "brent_fred.csv": {
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU&cosd=2016-06-01&coed=2023-08-24",
+    "retrieved_utc": "2026-10-24T07:08:14.731669+00:00",
+    "sha256": "1304e59e51542b9ab8f1c6ba1641d8888839345da5b5dbbecb55c665dbf296a5"
+  },
+  "ff3_daily.zip": {
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip",
+    "retrieved_utc": "2026-10-24T07:08:14.731710+00:00",
+    "sha256": "2f29e22546069914890a712680a6f81f3680ebc3543b52864484d209ca13a7db"
+  }
+}
